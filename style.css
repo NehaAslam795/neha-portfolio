@@ -925,3 +925,245 @@ height:520px;
 }
 
 }
+
+/* ==========================================================
+   COMPLETE MOBILE RESPONSIVE FIX
+   Paste at the VERY END of style.css
+========================================================== */
+
+@media screen and (max-width: 768px){
+
+html,body{
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.nav-container{
+    padding:0 20px;
+}
+
+.logo{
+    font-size:2rem;
+}
+
+.menu-toggle{
+    display:flex;
+}
+
+.nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#123D36;
+    display:none;
+    flex-direction:column;
+    text-align:center;
+    padding:25px 0;
+    gap:20px;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+/* Hero */
+
+.hero-section{
+    padding:120px 20px 60px;
+    min-height:auto;
+}
+
+.hero-container{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.hero-image-area{
+    order:1;
+    justify-content:center;
+}
+
+.image-wrapper{
+    width:280px;
+    height:auto;
+    transform:none;
+}
+
+.profile-img{
+    width:100%;
+    height:auto;
+}
+
+.hero-content{
+    order:2;
+    text-align:center;
+}
+
+.available-badge{
+    margin:auto;
+}
+
+.sub-title{
+    font-size:.8rem;
+}
+
+.main-heading{
+    font-size:3rem;
+    line-height:1.1;
+}
+
+.professional-title{
+    font-size:1.15rem;
+}
+
+.hero-intro{
+    font-size:1rem;
+    line-height:1.8;
+    max-width:100%;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-buttons .btn{
+    width:100%;
+    justify-content:center;
+}
+
+.hero-socials{
+    justify-content:center;
+}
+
+/* Sections */
+
+.section-header{
+    text-align:center;
+}
+
+.section-title{
+    font-size:2.2rem;
+}
+
+.section-title::after{
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* About */
+
+.about-container{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.info-cards-grid{
+    grid-template-columns:1fr;
+}
+
+/* Skills */
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+/* Projects */
+
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+.project-img{
+    height:200px;
+}
+
+.project-links{
+    flex-direction:column;
+}
+
+.project-links .btn{
+    width:100%;
+    justify-content:center;
+}
+
+/* Education */
+
+.timeline-container{
+    padding-left:0;
+}
+
+.timeline-line-path,
+.timeline-dot{
+    display:none;
+}
+
+/* Certificates */
+
+.certifications-grid{
+    grid-template-columns:1fr;
+}
+
+/* Contact */
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.contact-form-wrapper{
+    padding:25px;
+}
+
+/* Footer */
+
+.footer-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-nav{
+    justify-content:center;
+}
+
+.footer-socials{
+    justify-content:center;
+}
+
+}
+
+/* Small Phones */
+
+@media screen and (max-width:480px){
+
+.logo{
+    font-size:1.8rem;
+}
+
+.main-heading{
+    font-size:2.4rem;
+}
+
+.professional-title{
+    font-size:1rem;
+}
+
+.hero-intro{
+    font-size:.95rem;
+}
+
+.image-wrapper{
+    width:240px;
+}
+
+.btn{
+    font-size:.9rem;
+    padding:14px 18px;
+}
+
+.section-title{
+    font-size:1.9rem;
+}
+
+}
